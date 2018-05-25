@@ -144,6 +144,7 @@ func (l *Logger) formatHeader(buf *[]byte, t time.Time, level string, file strin
                 if file[i] == '/' {
                     short = file[i+1:]
                     break
+		}
             }
         }
         *buf = append(*buf, file...)
