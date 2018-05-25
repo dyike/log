@@ -69,7 +69,7 @@ func SetOutput(w io.Writer) {
     std.mu.Lock()
     defer std.mu.Unlock()
     std.out = w
-)
+}
 
 // SetLevel set log level for the standard logger.
 func SetLevel(level int) {
